@@ -1,8 +1,14 @@
 import sys
-def default():
-    print('neo')
-def main():
-    default()
 
+def cat():
+    print('Meow!')
+def default():
+    print('Hello',sys.argv[1])
+
+def main():
+    if sys.argv[1] == 'cat': 
+        cat()
+    else:
+        default()
 if __name__ == '__main__':
     main()
